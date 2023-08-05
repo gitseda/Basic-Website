@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>SPACEGON</title>
+    
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="top-nav" id="top-nav-id">
+        <div class="container">
+            <div class="logo"><a href="index.html"><i class="fa-solid fa-rocket fa-bounce fa-lg" style="color: #fff;"></i>  Space</a></div>
+            <div class="menu">
+                <a href="#header" class="active">Home</a>
+                <a href="#about-us">About</a>
+                <a href="#why-us">Why Us</a>
+                <a href="#contact">Contact</a>
+                <a href="javascript:void(0)" class="icon" onclick="responsiveMenu()">&#9776;</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="header">
+        <h2>Welcome to <span>Our Space Website!</span></h2>
+            <p> Explore the Vast Universe with Us
+            
+                Embark on a journey beyond the stars and dive into the mysteries of the cosmos. 
+                Our space website is your gateway to an extraordinary adventure through the boundless expanse of 
+                the universe. 
+                Uncover the breathtaking beauty of distant galaxies, shimmering nebulae, and majestic star clusters. 
+                Our collection of stunning space images will leave you awe-inspired and ignite your curiosity about the 
+                wonders of the cosmos. <br>
+                Stay informed with the latest space discoveries, astronomical events, and space missions. 
+                Our dedicated team of astronomers and scientists curate up-to-date information, making sure you 
+                never miss a moment in the ever-evolving world of space exploration.
+                Delve into the intriguing phenomena that shape our universe, from black holes and supernovas to the 
+                delicate dance of planets in our solar system. Our detailed articles and explanations will satiate your 
+                hunger for knowledge about the cosmos. <br> <br>
+                Start exploring now!
+
+            </p>
+    </header>
+
+    <!-- CONTENT -->
+    <main>
+        <!-- ABOUT US -->
+        <section id="about-us">
+            <div class="row">
+                <div class="col-66">
+                    <h1 class="first-title"> About Us! </h1>
+                    <h2 class="second-title">We are the best.</h2>
+                    <p> 
+                        <span class="third-title">At SPACEGON, </span>
+                        we are passionate about exploring the wonders of the cosmos and sharing our 
+                        fascination with the universe with fellow space enthusiasts like you. Our mission is to provide 
+                        a platform that ignites curiosity, fosters learning, and brings the beauty of space closer to 
+                        everyone.
+                    </p> 
+                    <button class="custom-btn btn-1">Read More</button>
+                </div>
+                <div class="col-33">
+                    <img src="image/about.png" alt="about us">
+                </div>
+            </div>
+        </section>
+
+        <!-- JOURNEY US -->
+        <section style="background-color: #000; color: #fff">
+            <div class="row">
+                <div class="col-33">
+                    <img src="image/astronaut.png" alt="about us">
+                </div>
+                <div class="col-66">
+                    <h1 class="first-title"> Our Journey! </h1>
+                    <p> 
+                        <span class="third-title">SPACEGON, </span>
+                        was founded by a group of astronomy enthusiasts who wanted to create a space where people could 
+                        gather to celebrate the magnificence of the universe. Our journey began with a simple idea: to make astronomy 
+                        and space exploration accessible to all, regardless of their level of expertise.
+                    </p> 
+                    <button class="custom-btn btn-2">Read More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY US -->
+        <section id="why-us">
+            <div class="row">
+                <div class="col-66">
+                    <h1 class="first-title"> Why Us! </h1>
+                    <h1 style="color: #4D4D4D;">Through our carefully curated content, we aim to inspire and educate. </h1>
+                    <p> 
+                        Whether you're a seasoned astronomer or someone taking their first steps in stargazing, we have something for you. 
+                        Our articles cover a wide range of topics, from the latest discoveries in astrophysics to tips for observing 
+                        celestial events.
+                        In addition to educational content, we take pride in showcasing some of the most stunning images of the cosmos 
+                        captured by both amateur and professional astronomers. Witness the beauty of distant galaxies, shimmering nebulae, 
+                        and other celestial wonders that continue to amaze and humble us.
+                    </p> 
+                    <button class="custom-btn btn-3">Read More</button>
+                </div>
+                <div class="col-33">
+                    <img src="image/alien.png" alt="about us">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER --> 
+    <footer>
+        <section id="contact">
+            <h1 class="first-title" style="text-align: center; color: #000;">Contact Form</h1>
+            <form>
+                <label><b>Name</b></label>
+                <input type="text" name="" id="" placeholder="Name">
+                <label><b>E-Mail</b></label>
+                <input type="email" name="" id="" placeholder="E-Mail">
+                <textarea rows="8"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <p>&copy; Copyright 2023 Powered by <a href="linkedin.com/in/seda-nur-günay-707757254" target="_blank">sedanurguunay@gmail.com</a></p>
+    </footer>
+
+    <script type="text/javascript">
+        function responsiveMenu(){
+            var x = document.getElementById("top-nav-id");
+            if(x.className ==="top-nav"){
+                x.className = x.className + " responsive";
+            } else{
+                x.className = "top-nav";
+            }
+        }
+    </script>
+</body>
+</html>
